@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:traffic_park/pages/home.dart';
 import 'package:traffic_park/pages/book.dart';
 import 'package:traffic_park/pages/traffic.dart';
+import 'package:traffic_park/pages/bill.dart';
 
 
 void main() async{
@@ -12,6 +13,7 @@ void main() async{
         '/home': (context)=> home(),
         '/book': (context)=> book(),
         '/traffic': (context)=> traffic(),
+        '/bill': (context)=> bill(),
       }
   ));
 }

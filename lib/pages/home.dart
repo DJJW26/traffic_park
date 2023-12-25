@@ -114,12 +114,12 @@ class _homeState extends State<home> with SingleTickerProviderStateMixin {
               ),
             ),
           ),
-          SizedBox(height: 270.0),
+          SizedBox(height: 250.0),
           Container(
             height: 5.0,
             color: hexStringToColor('FAF8E4'),
           ),
-          SizedBox(height: 50.0),
+          SizedBox(height: 70.0),
           Center(
               child: Text(
                   'What can we do for you today?',
@@ -131,7 +131,7 @@ class _homeState extends State<home> with SingleTickerProviderStateMixin {
                 ),
               ),
           ),
-          SizedBox(height: 50.0),
+          SizedBox(height: 30.0),
           Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
@@ -161,7 +161,7 @@ class _homeState extends State<home> with SingleTickerProviderStateMixin {
               ),
             ],
           ),
-          SizedBox(height: 20.0),
+          SizedBox(height: 10.0),
           Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,

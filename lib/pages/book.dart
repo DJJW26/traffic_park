@@ -117,7 +117,8 @@ class _bookState extends State<book> with SingleTickerProviderStateMixin {
               crossAxisSpacing: 8.0,
               mainAxisSpacing: 8.0,
             ),
-            itemCount: 20, // Adjust the total number of parking spaces as needed
+            itemCount: 20, // Adjust the
+            shrinkWrap: true,// total number of parking spaces as needed
             itemBuilder: (context, index) {
               return SlideTransition(
                 position: _itemAnimation,
@@ -126,7 +127,7 @@ class _bookState extends State<book> with SingleTickerProviderStateMixin {
                   child: InkWell(
                     onTap: () {
                       // Handle the tap action for the parking space at index
-                      print('Parking Space $index tapped!');
+                      Navigator.pushNamed(context, '/bill');
                     },
                     child: Container(
                       width: 50.0,
@@ -136,7 +137,7 @@ class _bookState extends State<book> with SingleTickerProviderStateMixin {
                       ),
                       child: Center(
                         child: Text(
-                          'Space $index',
+                          'Space ${index+1}',
                           style: TextStyle(fontSize: 12.0),
                         ),
                       ),
