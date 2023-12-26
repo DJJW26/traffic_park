@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:traffic_park/util/colors.dart';
+import 'package:traffic_park/util/traffic_data.dart';
 
 class traffic extends StatefulWidget {
   const traffic({Key? key}) : super(key: key);
@@ -26,7 +27,17 @@ class _trafficState extends State<traffic> {
           ),
         ),
       ),
-      body:
+      body: ListView.builder(
+          padding: const EdgeInsets.all(8),
+          itemCount: data.length,
+          itemBuilder: (BuildContext context, int index) {
+            return Container(
+              height: 50,
+              color: hexStringToColor(colorCodes[index]),
+              child: Center(child: Text('${data[index]}')),
+            );
+          }
+      ),
     );
   }
 }
